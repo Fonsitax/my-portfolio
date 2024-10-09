@@ -2,3 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+/* index.css */
+@keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);                  
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 1s ease-out forwards;
+  }
+  
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+  --font-primary: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: #f9fafb;
+    color: #1A202C;
+    margin: 0;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+  
+  p, a, span {
+    font-weight: 300;
+  }
