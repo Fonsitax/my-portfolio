@@ -2,45 +2,103 @@
 @tailwind components;
 @tailwind utilities;
 
-/* index.css */
+/* Animations */
 @keyframes fade-in-up {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);                  
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .animate-fade-in-up {
-    animation: fade-in-up 1s ease-out forwards;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0rem;
-  text-align: center;
-  --font-primary: 'Poppins', sans-serif;
 }
 
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Root Container */
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  text-align: center;
+  font-family: var(--font-primary, 'Poppins');
+  background-color: #f9fafb;
+  color: #1C1E21;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+.dark #root {
+  background-color: #10162F;
+  color: #E5E7EB;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+}
+
+/* Body Styles */
 body {
-    font-family: var(--font-primary);
-    background-color: #f9fafb;
-    color: #1A202C;
-    margin: 0;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-  }
-  
-  p, a, span {
-    font-weight: 300;
-  }
+  font-family: var(--font-primary);
+  background-color: #b9d8f1; /* Light Mode */
+  color: #1A202C; /* Text color for light mode */
+  margin: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background-color: #10162F; /* Dark Mode */
+  color: #FFFFFF; /* Text color for dark mode */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #1F4F82;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #FFD300;
+}
+
+/* Text and Links */
+p, a, span {
+  font-weight: 300;
+}
+
+a {
+  color: #3B82F6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1F4F82;
+}
+
+.dark a {
+  color: #60A5FA;
+}
+
+.dark a:hover {
+  color: #FFD300;
+}
