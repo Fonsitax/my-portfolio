@@ -33,6 +33,51 @@
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-once {
+  animation: pulse 0.5s ease-in-out;
+}
+
+
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-section-fadeinandout {
+  animation: fadeInSlideUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInScroll {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-scroll-fadeIn {
+  animation: fadeInScroll 0.8s ease-out forwards;
+}
+
+
 /* Root Container */
 #root {
   max-width: 100%;

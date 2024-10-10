@@ -25,7 +25,7 @@ const Home = () => {
           </p>
 
           <button className="px-6 py-3 bg-[#10162F] text-[#FFFFFF] dark:bg-[#FFD300] dark:text-[#10162F] rounded-md font-semibold hover:scale-105 hover:rotate-2 transition-transform duration-500 ease-in-out opacity-0 animate-fade-in-up animation-delay-2500">
-            See My Projects 🚀
+            My work 🚀
           </button>
         </div>
       </div>

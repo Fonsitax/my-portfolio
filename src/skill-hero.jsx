@@ -24,7 +24,7 @@ const skills = [
 
 const SkillsHero = () => {
   return (
-    <div className="min-h-screen bg-[#F9FAFB] dark:bg-[#10162F] p-6 flex flex-col items-center">
+    <div className=" mt-16 min-h-screen bg-[#F9FAFB] dark:bg-[#10162F] p-6 flex flex-col items-center">
       <h2 className="text-4xl font-bold text-[#10162F] dark:text-[#FFD300] mb-20 text-center">
         My Skill Set 🤹🏻
       </h2>

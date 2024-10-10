@@ -4,6 +4,7 @@ import Footer from './footer';
 import SkillsHero from './skill-hero';
 import Home from './pages/home';
 import About from './pages/about';
+import AboutMeHome from './about-home';
 import Projects from './pages/project';
 import { Routes, Route } from 'react-router-dom';
 import './index.css';
@@ -24,9 +25,12 @@ function App() {
           <Route path="/home" element={
             <>
               <Home />
+              <AboutMeHome />
               <SkillsHero />
               <Projects />
+              
             </>
+            
           } />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
