@@ -24,15 +24,19 @@ const skills = [
 
 const SkillsHero = () => {
   return (
-    <div className=" mt-16 min-h-screen bg-[#F9FAFB] dark:bg-[#10162F] p-6 flex flex-col items-center">
-      <h2 className="text-4xl font-bold text-[#10162F] dark:text-[#FFD300] mb-20 text-center">
+    <div className="mt-16 min-h-screen bg-[#F9FAFB] dark:bg-[#10162F] p-6 md:p-12 flex flex-col items-center">
+      <h2 className="text-3xl sm:text-4xl font-bold text-[#10162F] dark:text-[#FFD300] mb-12 text-center">
         My Skill Set 🤹🏻
       </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 w-full max-w-5xl">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6 w-full max-w-5xl">
         {skills.map((skill, index) => (
-          <div key={index} className="flex flex-col items-center p-4 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-[#34394C] dark:border-gray-700 transition-transform transform hover:scale-105">
-            <div className="text-5xl mb-4">{skill.icon}</div>
-            <p className="text-lg font-semibold text-gray-900 dark:text-white">{skill.name}</p>
+          <div 
+            key={index} 
+            className="flex flex-col items-center p-4 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-[#34394C] dark:border-gray-700 
+            transition-transform transform hover:scale-105 hover:shadow-lg"
+          >
+            <div className="text-4xl sm:text-5xl mb-2 sm:mb-4">{skill.icon}</div>
+            <p className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white">{skill.name}</p>
           </div>
         ))}
       </div>

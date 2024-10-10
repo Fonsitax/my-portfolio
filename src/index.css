@@ -17,6 +17,25 @@
 .animate-fade-in-up {
   animation: fade-in-up 1s ease-out forwards;
 }
+.delay-1000 { animation-delay: 1s; }
+.delay-1500 { animation-delay: 1.5s; }
+.delay-2000 { animation-delay: 2s; }
+.delay-2500 { animation-delay: 2.5s; }
+
+.underline-on-hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.underline-on-hover:hover::after {
+  transform: scaleX(1);
+}
+
 
 @keyframes fadeInUp {
   0% {
@@ -62,7 +81,9 @@
   animation: fadeInSlideUp 0.8s ease-out forwards;
 }
 
-@keyframes fadeInScroll {
+
+
+@keyframes fade-in {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -73,9 +94,11 @@
   }
 }
 
-.animate-scroll-fadeIn {
-  animation: fadeInScroll 0.8s ease-out forwards;
+.animate-fade-in {
+  opacity: 0; /* Start hidden */
+  animation: fade-in 0.8s ease-in-out forwards;
 }
+
 
 
 /* Root Container */
