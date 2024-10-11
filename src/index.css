@@ -17,10 +17,18 @@
 .animate-fade-in-up {
   animation: fade-in-up 1s ease-out forwards;
 }
-.delay-1000 { animation-delay: 1s; }
-.delay-1500 { animation-delay: 1.5s; }
-.delay-2000 { animation-delay: 2s; }
-.delay-2500 { animation-delay: 2.5s; }
+.delay-1000 {
+  animation-delay: 1s;
+}
+.delay-1500 {
+  animation-delay: 1.5s;
+}
+.delay-2000 {
+  animation-delay: 2s;
+}
+.delay-2500 {
+  animation-delay: 2.5s;
+}
 
 .underline-on-hover::after {
   content: "";
@@ -35,7 +43,6 @@
 .underline-on-hover:hover::after {
   transform: scaleX(1);
 }
-
 
 @keyframes fadeInUp {
   0% {
@@ -53,7 +60,8 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -64,7 +72,6 @@
 .animate-pulse-once {
   animation: pulse 0.5s ease-in-out;
 }
-
 
 @keyframes fadeInSlideUp {
   from {
@@ -80,8 +87,6 @@
 .about-section-fadeinandout {
   animation: fadeInSlideUp 0.8s ease-out forwards;
 }
-
-
 
 @keyframes fade-in {
   from {
@@ -99,25 +104,24 @@
   animation: fade-in 0.8s ease-in-out forwards;
 }
 
-
-
 /* Root Container */
 #root {
   max-width: 100%;
   margin: 0 auto;
   padding: 1rem 1rem;
   text-align: center;
-  font-family: var(--font-primary, 'Poppins');
+  font-family: var(--font-primary, "Poppins");
   background-color: #f9fafb;
-  color: #1C1E21;
+  color: #1c1e21;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease, color 0.3s ease;
+  --darkmode-color: #10162f;
 }
 
 /* Dark Mode */
 .dark #root {
-  background-color: #10162F;
-  color: #E5E7EB;
+  background-color: var(--darkmode-color);
+  color: #e5e7eb;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
 }
 
@@ -125,7 +129,7 @@
 body {
   font-family: var(--font-primary);
   background-color: #b9d8f1; /* Light Mode */
-  color: #1A202C; /* Text color for light mode */
+  color: #1a202c; /* Text color for light mode */
   margin: 0;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -134,39 +138,51 @@ body {
 }
 
 body.dark {
-  background-color: #10162F; /* Dark Mode */
-  color: #FFFFFF; /* Text color for dark mode */
+  background-color: #10162f; /* Dark Mode */
+  color: #ffffff; /* Text color for dark mode */
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
-  color: #1F4F82;
+  color: #1f4f82;
 }
 
-.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-  color: #FFD300;
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #ffd300;
 }
 
 /* Text and Links */
-p, a, span {
+p,
+a,
+span {
   font-weight: 300;
 }
 
 a {
-  color: #3B82F6;
+  color: #3b82f6;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #1F4F82;
+  color: #1f4f82;
 }
 
 .dark a {
-  color: #60A5FA;
+  color: #60a5fa;
 }
 
 .dark a:hover {
-  color: #FFD300;
+  color: #ffd300;
 }

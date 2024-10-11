@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#F9FAFB] dark:bg-[#10162F] text-[#10162F] dark:text-[#FFFFFF] py-4 w-full border-t border-[#707382] dark:border-[#FFFAE5]">
+    <footer className="bg-[#F9FAFB] dark:bg-[var(--darkmode-color)] text-[#10162F] dark:text-[#FFFFFF] py-4 w-full border-t border-[#707382] dark:border-[#FFFAE5]">
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         {/* Left Side: Copyright or Description */}
         <p className="text-sm md:text-base">

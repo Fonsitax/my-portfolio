@@ -4,8 +4,18 @@ const projects = [
   {
     title: "Geonic Reader",
     imageUrl: "public/geography-edu.png",
-    techStack: ["React", "JavaScript", "Tailwind CSS", "Node.js", "Vite", "Neon", "MySQL", "Express"],
-    description: "A geography learning platform with bionic reading mode designed to help users with dyslexia and concentration challenges.",
+    techStack: [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Vite",
+      "Neon",
+      "MySQL",
+      "Express",
+    ],
+    description:
+      "A geography learning platform with bionic reading mode designed to help users with dyslexia and concentration challenges.",
     link: "https://geonic-reader.onrender.com/",
   },
   {
@@ -55,7 +65,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center h-full p-6 md:p-20 bg-[#F1F5F9] dark:bg-[#1A1D2E]">
+    <div className="flex justify-center items-center h-full p-6 md:p-20 bg-[#F1F5F9] dark:bg-[var(--darkmode-color)]">
       <section className="py-4 px-4 mx-auto w-full max-w-screen-lg lg:py-16">
         <h2 className="text-2xl md:text-3xl font-bold text-[#10162F] dark:text-[#FFD300] mb-12 text-center">
           My Projects ✨
@@ -83,15 +93,30 @@ const Projects = () => {
               />
               <div className="flex flex-wrap gap-2 mb-3">
                 {project.techStack.map((tech, idx) => (
-                  <span key={idx} className="bg-[#EDF2F7] dark:bg-[#585C6D] text-[#4A5568] dark:text-[#FFFAE5] text-xs font-semibold px-2 py-1 rounded">
+                  <span
+                    key={idx}
+                    className="bg-[#EDF2F7] dark:bg-[#585C6D] text-[#4A5568] dark:text-[#FFFAE5] text-xs font-semibold px-2 py-1 rounded"
+                  >
                     {tech}
                   </span>
                 ))}
               </div>
               <span className="text-blue-600 dark:text-[#FFD300] hover:underline font-medium text-base md:text-lg inline-flex items-center mt-auto">
                 Read more
-                <svg className="w-3.5 h-3.5 ml-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                <svg
+                  className="w-3.5 h-3.5 ml-2 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
                 </svg>
               </span>
             </a>
