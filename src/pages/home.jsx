@@ -2,9 +2,8 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#F9FAFB] dark:bg-[#10162F] p-8 md:p-16 border-t border-[#707382] dark:border-[#FFFAE5] transition-all duration-500 ease-in-out">
+    <div className="min-h-screen flex items-center justify-center bg-[#F9FAFB] dark:bg-[var(--darkmode-color)] p-8 md:p-16 border-t border-[#707382] dark:border-[#FFFAE5] transition-all duration-500 ease-in-out">
       <div className="flex flex-col md:flex-row items-center justify-center max-w-4xl">
-        
         {/* Text Section */}
         <div className="text-center max-w-2xl">
           <h1 className="text-4xl md:text-5xl font-bold text-[#10162F] dark:text-[#FFD300] mb-6 opacity-0 animate-fade-in-up delay-1000">

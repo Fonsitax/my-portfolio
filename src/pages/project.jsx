@@ -4,8 +4,18 @@ const projects = [
   {
     title: "Geonic Reader",
     imageUrl: "public/geography-edu.png",
-    techStack: ["React", "JavaScript", "Tailwind CSS", "Node.js", "Vite", "Neon", "MySQL", "Express"],
-    description: "A geography learning platform with bionic reading mode designed to help users with dyslexia and concentration challenges.",
+    techStack: [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Vite",
+      "Neon",
+      "MySQL",
+      "Express",
+    ],
+    description:
+      "A geography learning platform with bionic reading mode designed to help users with dyslexia and concentration challenges.",
     link: "https://geonic-reader.onrender.com/",
   },
   {
@@ -92,7 +102,10 @@ const Projects = () => {
               />
               <div className="flex flex-wrap gap-2 mb-3">
                 {project.techStack.map((tech, idx) => (
-                  <span key={idx} className="bg-[#EDF2F7] dark:bg-[#585C6D] text-[#4A5568] dark:text-[#FFFAE5] text-xs font-semibold px-2 py-1 rounded">
+                  <span
+                    key={idx}
+                    className="bg-[#EDF2F7] dark:bg-[#585C6D] text-[#4A5568] dark:text-[#FFFAE5] text-xs font-semibold px-2 py-1 rounded"
+                  >
                     {tech}
                   </span>
                 ))}
