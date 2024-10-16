@@ -27,6 +27,9 @@ function App() {
                 <Home />
               </section>
               <section ref={skillsHeroRef}>
+                <AboutMeHome />
+              </section>
+              <section ref={skillsHeroRef}>
                 <SkillsHero />
               </section>
               <section ref={projectsRef}>
