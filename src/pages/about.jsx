@@ -9,7 +9,7 @@ const About = () => {
 
       {/* Image */}
       <img
-        src="public/my-photo-1.jpg"
+        src="my-photo-1.jpg"
         alt="Fon Yingrak Muansawad"
         className="w-48 h-48 rounded-full shadow-lg mb-6 object-cover transition-transform duration-300 hover:scale-105 ease-in-out"
       />

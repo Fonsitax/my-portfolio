@@ -8,14 +8,8 @@ import AboutMeHome from './about-home';
 import Projects from './pages/project';
 import { Routes, Route } from 'react-router-dom';
 import './index.css';
-import useScrollAnimation from './scroll-animation';
 
 function App() {
-  // Apply animation hook to each section
-  const homeRef = useScrollAnimation();
-  const skillsHeroRef = useScrollAnimation();
-  const projectsRef = useScrollAnimation();
-
   return (
     <div className='App'>         
       <Navbar />
@@ -23,35 +17,21 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-              <section ref={homeRef}>
-                <Home />
-              </section>
-              <section ref={skillsHeroRef}>
-                <AboutMeHome />
-              </section>
-              <section ref={skillsHeroRef}>
-                <SkillsHero />
-              </section>
-              <section ref={projectsRef}>
-                <Projects />
-              </section>
+              <Home />
+              <AboutMeHome />
+              <SkillsHero />
+              <Projects />
             </>
           } />
           <Route path="/home" element={
             <>
-              <section ref={homeRef}>
-                <Home />
-              </section>
-              <section ref={skillsHeroRef}>
-                <AboutMeHome />
-              </section>
-              <section ref={projectsRef}>
-                <SkillsHero />
-              </section>
-              <section ref={projectsRef}>
-                <Projects />
-              </section>
+              <Home />
+              <AboutMeHome />             
+              <SkillsHero />
+              <Projects />
+              
             </>
+            
           } />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
