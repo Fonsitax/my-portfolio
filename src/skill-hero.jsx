@@ -18,16 +18,20 @@ const skills = [
   { name: "VSCode", icon: <SiVisualstudiocode className="text-blue-500" /> },
   { name: "Salesforce", icon: <SiSalesforce className="text-blue-500" /> },
   { name: "RESTful API", icon: <FaNetworkWired className="text-gray-600 dark:text-white" /> },
-  { name: "Windows", icon: <FaWindows className="text-blue-700" /> },
-  { name: "MacOS", icon: <FaApple className="text-gray-800 dark:text-white" /> },
+//  { name: "Windows", icon: <FaWindows className="text-blue-700" /> },
+// { name: "MacOS", icon: <FaApple className="text-gray-800 dark:text-white" /> },
 ];
 
 const SkillsHero = () => {
   return (
-    <div className="mt-16 min-h-screen bg-[#F9FAFB] dark:bg-[#10162F] p-6 md:p-12 flex flex-col items-center">
-      <h2 className="text-3xl sm:text-4xl font-bold text-[#10162F] dark:text-[#FFD300] mb-12 text-center">
-        My Skill Set 🤹🏻
-      </h2>
+    <div className="mt-48 min-h-screen bg-[#F9FAFB] dark:bg-[#10162F] p-6 md:p-12 flex flex-col items-center">
+      <div className="item-center">
+        <h1 className="mb-32 text-2xl border-b-2 border-transparent hover:border-[#10162F] 
+      dark:hover:border-[#FFD300] transition-all duration-300 sm:text-4xl font-bold text-[#10162F] dark:text-[#FFD300]">
+        My Tech Stack 🤹🏻
+      </h1>
+      </div>
+      
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6 w-full max-w-5xl">
         {skills.map((skill, index) => (
           <div 

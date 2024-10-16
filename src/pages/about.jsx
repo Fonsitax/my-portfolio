@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="p-6 bg-[#F9FAFB] dark:bg-[#10162F] text-[#10162F] dark:text-[#FFFFFF] flex flex-col items-center about-section-fadeinandout">
-      <h1 className="text-3xl mt-20 font-bold mb-8 text-[#10162F] dark:text-[#FFD300]">
+    <div className="p-6 bg-[#F9FAFB] dark:bg-[#10162F] text-[#4A5568] dark:text-[#FFFFFF] flex flex-col items-center about-section-fadeinandout">
+      <h1 className="text-3xl mt-20 font-bold mb-8 text-[#4A5568] dark:text-[#FFD300]">
         About Me 🙋🏻‍♀️
       </h1>
 
@@ -17,7 +17,7 @@ const About = () => {
       {/* Description */}
       <div className="max-w-3xl text-center mb-6">
         <p className="text-lg text-[#4A5568] dark:text-[#9FA2AC] mb-4">
-          Hi 👋, I'm Fon Yingrak Muansawad, a tech-enthusiast based in Munich. I'm passionate about creating engaging digital experiences that make a positive impact.
+          Hi, I'm Fon Yingrak Muansawad, a tech-enthusiast based in Munich. I'm passionate about creating engaging digital experiences that make a positive impact.
         </p>
         <p className="text-lg text-[#4A5568] dark:text-[#9FA2AC] mb-4">
           A versatile professional transitioning into full-stack development with a strong focus on front-end technologies. My background in digital learning, SaaS, and social innovation gives me a unique perspective in creating user-centered, impactful digital experiences.
