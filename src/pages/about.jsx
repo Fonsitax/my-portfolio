@@ -52,7 +52,7 @@ const About = () => {
 
       {/* Download Resume Button */}
       <a
-        href="Fon_YMuansawad_CV_EN.pdf"
+        href="Fon_Muansawad_CV_Portfolio.pdf"
         download
         className="px-6 py-3 mt-20 mb-20 bg-[#10162F] dark:bg-[#FFD300] text-white dark:text-[#10162F] rounded-md font-semibold 
           hover:bg-[#3B82F6] dark:hover:bg-[#FFD300] transition-transform transform hover:-translate-y-1 hover:scale-105 ease-in-out duration-300 shadow-md"

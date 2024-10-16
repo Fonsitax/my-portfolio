@@ -3,7 +3,7 @@ import React from "react";
 const projects = [
   {
     title: "Geonic Reader",
-    imageUrl: "public/geography-edu.png",
+    imageUrl: "geography-edu.png",
     techStack: [
       "React",
       "JavaScript",
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: "Project Two",
-    imageUrl: "public/rock-paper-scissors.png",
+    imageUrl: "rock-paper-scissors.png",
     techStack: ["React", "Redux", "Express", "MongoDB"],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. ",
     link: "#",
