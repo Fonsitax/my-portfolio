@@ -14,31 +14,45 @@ const projects = [
       "MySQL",
       "Express",
     ],
-    description:
-      "A geography learning platform with bionic reading mode designed to help users with dyslexia and concentration challenges.",
+    description: (
+      <p className="text-justify">
+        Do your <strong>e</strong>yes read <strong>f</strong>aster than your <strong>b</strong>rain? My solo and graduation project. Geonic Reader is a geography learning platform with bionic reading mode designed to help users with dyslexia and concentration challenges.
+      </p>
+    ),
+    
     link: "https://geonic-reader.onrender.com/",
   },
   {
-    title: "Project Two",
+    title: "Rock Paper Scissors",
     imageUrl: "rock-paper-scissors.png",
-    techStack: ["React", "Redux", "Express", "MongoDB"],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. ",
+    techStack: ["Node.js", "JSVanilla", "DOMmanipulation"],
+    description: ( 
+      <p className="text-justify">
+      Coming up next. I’m building a Rock-Paper-Scissors game with Node.js, transforming it into an interactive single-page app using DOM manipulation. 
+      Thanks for your patience and stay tuned!
+      </p>
+      ), 
+      
     link: "#",
   },
 ];
 
 const Projects = () => {
   return (
-    <div className="flex h-full p-6 md:p-20 bg-[#F1F5F9] dark:bg-[#10162f]">
-      <section className="py-4 px-4 mx-auto w-full max-w-screen-lg lg:py-16">
-        <div className="item-center text-center mb-32 mt-32">
-          <h2 className="inline-block text-2xl md:text-3xl font-bold text-[#10162F] dark:text-[#FFD300] mb-12 
-        border-b-2 border-transparent hover:border-[#10162F] 
-        dark:hover:border-[#FFD300] transition-all duration-300">
-          My Projects ✨
-        </h2>
-        </div>
-        
+    <div className="flex h-full p-6 md:p-20 bg-[#F1F5F9] dark:bg-[#10162f]">    
+      <section className="py-4 px-4 mx-auto w-full max-w-screen-lg lg:py-16">  
+        <div className="text-left">
+          <h1 className=" text-4xl md:text-5xl font-bold text-[#10162F] dark:text-[#FFD300] mb-6 opacity-0 animate-fade-in-up delay-1000">
+            My Projects 🚀
+          </h1>
+          <p className="text-lg"> 
+          Welcome to my projects showcase! Here, you'll find a collection of work I've created both during my Bootcamp and in my free time. 
+          Each project reflects my journey into tech, highlighting my skills in different types of web development, problem-solving, and creativity. 
+          Whether they were built as part of my learning or passion projects, 
+          these are a testament to my growth and enthusiasm for building engaging, impactful digital experiences.
+          </p>
+          <br />
+       </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
           {projects.map((project, index) => (
             <a

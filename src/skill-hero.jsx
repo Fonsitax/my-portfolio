@@ -38,15 +38,18 @@ const skills = [
   { name: "JavaScript", icon: <FaJs className="text-yellow-500" /> },
   { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-400" /> },
-  { name: "Vite", icon: <SiVite className="text-purple-400" /> },
   { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
-  { name: "Express", icon: <SiExpress className="text-gray-800 dark:text-white" /> },
   { name: "RESTful API", icon: <FaNetworkWired className="text-gray-600 dark:text-white" /> },
+  { name: "Express", icon: <SiExpress className="text-gray-800 dark:text-white" /> },
+ { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-500" /> },
+  { name: "MySQL", icon: <SiMysql className="text-blue-600" /> },
+  { name: "Vite", icon: <SiVite className="text-purple-400" /> },
+   { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
   { name: "Flowbite", icon: <FaTools className="text-indigo-600" /> },
   { name: "Daisy UI", icon: <SiDaisyui className="text-pink-500" /> },
-  { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
-  { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-500" /> },
-  { name: "MySQL", icon: <SiMysql className="text-blue-600" /> },
+ { name: "GitHub", icon: <FaGithub className="text-black dark:text-gray-300" /> },
+   { name: "Git", icon: <FaGit className="text-red-500" /> },
+ { name: "Generative AI", icon: <FaRobot className="text-purple-600" /> },
   { name: "VSCode", icon: <SiVisualstudiocode className="text-blue-500" /> },
   { name: "Salesforce", icon: <SiSalesforce className="text-blue-500" /> },
   { name: "Windows", icon: <FaWindows className="text-blue-700" /> },
@@ -55,9 +58,6 @@ const skills = [
   { name: "Miro Board", icon: <FaProjectDiagram className="text-yellow-600" /> },
   { name: "Kanban Board", icon: <FaTasks className="text-teal-500" /> },
   { name: "Notion", icon: <FaRegStickyNote className="text-gray-500" /> },
-  { name: "GitHub", icon: <FaGithub className="text-black dark:text-gray-300" /> },
-  { name: "Git", icon: <FaGit className="text-red-500" /> },
-  { name: "Generative AI", icon: <FaRobot className="text-purple-600" /> },
   { name: "Agile", icon: <FaRunning className="text-green-500" /> },
 ];
 
@@ -65,10 +65,10 @@ const SkillsHero = () => {
   const [showAll, setShowAll] = useState(false);
 
   // Determine how many skills to show initially
-  const visibleSkills = showAll ? skills : skills.slice(0, Math.ceil(skills.length / 5));
+  const visibleSkills = showAll ? skills : skills.slice(0, Math.ceil(skills.length / 6));
 
   return (
-    <div className="bg-[#F9FAFB] dark:bg-[#1A1D2E] p-6 flex flex-col items-center">
+    <div className="bg-[#F9FAFB]/50 dark:bg-[#1A1D2E]/50 p-6 flex flex-col items-center">
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6 w-full max-w-5xl">
         {visibleSkills.map((skill, index) => (
           <div
@@ -90,10 +90,10 @@ const SkillsHero = () => {
       {/* Load More Button */}
       <button
         onClick={() => setShowAll(!showAll)}
-        className="mt-8 px-6 py-3 border border-[#10162F] dark:border-[#FFD300] bg-transparent text-[#10162F] dark:text-[#FFD300] font-semibold rounded-md 
+        className="mt-8 border-2 px-6 py-3 border border-[#10162F] dark:border-[#FFD300] bg-transparent text-[#10162F] dark:text-[#FFD300] font-semibold rounded-md 
         hover:bg-[#10162F] hover:text-white dark:hover:bg-[#FFD300] dark:hover:text-[#10162F] transition-colors duration-300"
       >
-        {showAll ? "Show Less" : "Load More"}
+        {showAll ? "Show Less" : "See My Tech Stack"}
       </button>
     </div>
   );

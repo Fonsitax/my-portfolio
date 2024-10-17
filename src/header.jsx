@@ -15,6 +15,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 w-full z-10 bg-[#F9FAFB] dark:bg-[var(--darkmode-color)] shadow">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+        
         {/* Left Side: Nav Links */}
         <div className="flex space-x-4">
           {["/home", "/projects", "/about"].map((path, index) => (
@@ -22,7 +23,7 @@ const Navbar = () => {
               key={index}
               to={path}
               className={({ isActive }) =>
-                `text-[#10162F] dark:text-[#FFFFFF] hover:text-[#3B82F6] dark:hover:text-[#FFD300] ${
+                `text-[#10162F] dark:text-[#FFFFFF] hover:text-[#3B82F6] dark:hover:text-[#FFD300] transition-colors duration-300 ${
                   isActive ? "underline text-[#FFD300] dark:text-[#FFD300]" : ""
                 }`
               }
@@ -36,12 +37,13 @@ const Navbar = () => {
         <div className="flex items-center">
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="bg-[var(--darkmode-color)] dark:bg-[#FFD300] text-white dark:text-[#10162F] px-3 py-2 rounded-md transition-colors duration-300 hover:bg-[#3B82F6] dark:hover:bg-[#FFD300] flex items-center"
+            className="group px-3 py-2 rounded-md transition-colors duration-300 
+                       hover:bg-[#3B82F6] dark:hover:bg-[#FFD300] flex items-center"
           >
             {darkMode ? (
-              // Sun Icon
+              // Sun Icon for Light Mode
               <svg
-                className="w-6 h-6 text-gray-800 dark:text-white"
+                className="w-6 h-6 text-gray-800 dark:text-white group-hover:text-yellow-50"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -54,9 +56,9 @@ const Navbar = () => {
                 />
               </svg>
             ) : (
-              // Moon Icon
+              // Moon Icon for Dark Mode
               <svg
-                className="w-6 h-6 text-gray-800 dark:text-white"
+                className="w-6 h-6 text-gray-300 dark:text-white group-hover:text-gray-300"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"

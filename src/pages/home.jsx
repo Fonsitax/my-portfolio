@@ -1,4 +1,5 @@
 import React from "react";
+import FawnSpeaker from "../FawnSpeaker";
 
 const Home = () => {
   return (
@@ -7,20 +8,28 @@ const Home = () => {
         {/* Text Section */}
         <div className="text-center max-w-2xl">
           <h1 className="text-4xl md:text-5xl font-bold text-[#10162F] dark:text-[#FFD300] mb-6 opacity-0 animate-fade-in-up delay-1000">
-            I'm Fon [fɔn] 
+            I'm Fon <span className="text-sm"><FawnSpeaker /> </span> 
           </h1>  
           <br />
           <div className="text-lg md:text-xl text-[#4A5568] dark:text-[#FFFFFF] mb-6 leading-relaxed opacity-0 animate-fade-in-up delay-1500">
             <p>
-              <span>multidisciplinary creative, </span> 
+              <span>[fɔn] 🔷 Jr. Fullstack Developer 🚀  Multidisciplinary Creative 🌟 Quereinsteigerin  - </span> 
              
-              driven to build user-focused solutions through <span className="font-bold text-[#10162F] dark:text-[#FFD300]">front-end development </span> 
+              <span>I have a passion for building engaging digital experiences.</span>
                </p>
           </div>
           <br />
-          <button className="px-6 py-3 bg-[#10162F] text-[#FFFFFF] dark:bg-[#FFD300] dark:text-[#10162F] rounded-md font-semibold hover:scale-105 hover:rotate-2 transition-transform duration-800 ease-in-out opacity-0 animate-fade-in-up delay-2000">
-            Learn More
-          </button>
+          <a 
+  href="https://www.linkedin.com/in/fon-yingrak-muansawad/" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="border-2 px-6 py-3 border border-[#10162F] dark:border-[#FFD300] bg-transparent text-[#10162F] dark:text-[#FFD300] font-semibold rounded-md 
+    hover:bg-[#10162F] hover:text-white dark:hover:bg-[#FFD300] dark:hover:text-[#10162F] transition-transform duration-800 ease-in-out opacity-0 animate-fade-in-up delay-2000"
+>
+  Let's Connect
+</a>
+
+
         </div>
       </div>
     </div>

@@ -18,16 +18,16 @@ function App() {
           <Route path="/" element={
             <>
               <Home />
-              <AboutMeHome />
               <SkillsHero />
+              <AboutMeHome />            
               <Projects />
             </>
           } />
           <Route path="/home" element={
             <>
               <Home />
-              <AboutMeHome />             
               <SkillsHero />
+              <AboutMeHome />                          
               <Projects />
               
             </>
