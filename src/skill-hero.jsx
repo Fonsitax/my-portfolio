@@ -93,7 +93,7 @@ const SkillsHero = () => {
         className="mt-8 border-2 px-6 py-3 border border-[#10162F] dark:border-[#FFD300] bg-transparent text-[#10162F] dark:text-[#FFD300] font-semibold rounded-md 
         hover:bg-[#10162F] hover:text-white dark:hover:bg-[#FFD300] dark:hover:text-[#10162F] transition-colors duration-300"
       >
-        {showAll ? "Show Less" : "See My Tech Stack"}
+        {showAll ? "Show Less" : "View My Tech Stack"}
       </button>
     </div>
   );

@@ -17,27 +17,36 @@ const AboutMeHome = () => {
         
         {/* Text Section */}
         <div className="text-left">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#10162F] dark:text-[#FFD300] mb-6 opacity-0 animate-fade-in-up delay-1000">
-            About Me ✨
-          </h1>
-          <div className="text-lg md:text-xl text-[#4A5568] dark:text-[#FFFFFF] mb-6 leading-relaxed opacity-0 animate-fade-in-up delay-1500" style={{ textAlign: 'justify' }}>
-            <p>
-              I am a career changer to software development with a background in politics and intercultural communication. Skilled in front-end technologies, including React, JavaScript, and CSS. 
-              <br /><br />As a former e-learning specialist and psychology geek passionate about building beautiful and user-friendly web applications that bring impact.
-            </p>
-          </div>
-          <div className="text-lg md:text-xl text-[#4A5568] dark:text-[#FFFFFF] mb-6 leading-relaxed opacity-0 animate-fade-in-up delay-1500" style={{ textAlign: 'justify' }}>
-            <p>
-              Thai native. Based in Munich. I'm a fast learner and challenge-taker, driven by continuous growth and lifelong learning.
-            </p>
-          </div>
-          <br />
-          <button>
-            <Link to="/about" className="px-6 py-3 bg-transparent border-2 border-[#10162F] dark:border-[#FFD300] text-[#10162F] dark:text-[#FFD300] rounded-md font-semibold hover:bg-[#10162F] hover:text-[#FFFFFF] dark:hover:bg-[#FFD300] dark:hover:text-[#10162F] hover:scale-105 hover:rotate-2 transition-all duration-300 ease-in-out opacity-0 animate-fade-in-up delay-2000">
-              Get to know me
-            </Link>
-          </button>
-        </div>
+  <h1 className="text-4xl md:text-5xl font-bold text-[#10162F] dark:text-[#FFD300] mb-6 opacity-0 animate-fade-in-up delay-1000">
+    About Me ✨
+  </h1>
+  
+  <div className="md:text-xl text-[#4A5568] dark:text-[#FFFFFF] mb-6 leading-relaxed opacity-0 animate-fade-in-up delay-1500 text-left md:text-justify">
+  <p>
+    I’m a career changer stepping into the world of software development, bringing a unique blend of expertise from politics, intercultural communication, and e-learning. With strong skills in front-end technologies like React, JavaScript, and CSS, I’m driven to create impactful, user-friendly web applications.
+  </p>
+</div>
+
+<div className="mb-12 md:text-xl text-[#4A5568] dark:text-[#FFFFFF] mb-6 leading-relaxed opacity-0 animate-fade-in-up delay-1500 text-left md:text-justify">
+  <p>
+    Originally from Thailand and now based in Munich, I’m a quick learner who thrives on challenges. My journey is fueled by a deep commitment to continuous growth and a lifelong love of learning.
+  </p>
+</div>
+
+
+
+
+
+
+  
+  <Link 
+    to="/about" 
+    className="px-6 py-3 bg-transparent border-2 border-[#10162F] dark:border-[#FFD300] text-[#10162F] dark:text-[#FFD300] rounded-md font-semibold transition-all duration-300 ease-in-out hover:bg-[#10162F] hover:text-[#FFFFFF] dark:hover:bg-[#FFD300] dark:hover:text-[#10162F] hover:scale-105 hover:rotate-2 opacity-0 animate-fade-in-up delay-2000"
+  >
+    My Journey
+  </Link>
+</div>
+
       </div>
     </div>
   );

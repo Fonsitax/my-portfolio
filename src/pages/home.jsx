@@ -13,10 +13,9 @@ const Home = () => {
           <br />
           <div className="text-lg md:text-xl text-[#4A5568] dark:text-[#FFFFFF] mb-6 leading-relaxed opacity-0 animate-fade-in-up delay-1500">
             <p>
-              <span>[fɔn] 🔷 Jr. Fullstack Developer 🚀  Multidisciplinary Creative 🌟 Quereinsteigerin  - </span> 
-             
-              <span>I have a passion for building engaging digital experiences.</span>
-               </p>
+            🌟Jr. Fullstack Developer 🌟 Quereinsteigerin 
+            <p>🌟 Multidisciplinary Creative 🌟 </p>
+              </p>
           </div>
           <br />
           <a 

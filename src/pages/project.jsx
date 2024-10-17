@@ -39,17 +39,17 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="flex h-full p-6 md:p-20 bg-[#F1F5F9] dark:bg-[#10162f]">    
-      <section className="py-4 px-4 mx-auto w-full max-w-screen-lg lg:py-16">  
+    <div className="mt-12 flex h-full p-6 md:p-20 bg-[#F1F5F9] dark:bg-[#10162f]">    
+      <section className=" py-4 px-4 mx-auto w-full max-w-screen-lg lg:py-16">  
         <div className="text-left">
           <h1 className=" text-4xl md:text-5xl font-bold text-[#10162F] dark:text-[#FFD300] mb-6 opacity-0 animate-fade-in-up delay-1000">
             My Projects 🚀
           </h1>
-          <p className="text-lg"> 
+          <p className="md:text-xl text-[#4A5568] dark:text-[#FFFFFF] mb-6 leading-relaxed opacity-0 animate-fade-in-up delay-1500 text-left md:text-justify"> 
           Welcome to my projects showcase! Here, you'll find a collection of work I've created both during my Bootcamp and in my free time. 
           Each project reflects my journey into tech, highlighting my skills in different types of web development, problem-solving, and creativity. 
-          Whether they were built as part of my learning or passion projects, 
-          these are a testament to my growth and enthusiasm for building engaging, impactful digital experiences.
+         
+          
           </p>
           <br />
        </div>
